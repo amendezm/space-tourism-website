@@ -1,0 +1,16 @@
+.crew {
+  height: 100%;
+  background: url("./../assets/crew/background-crew-desktop.jpg") no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .crew {
+    background: url("./../assets/crew/background-crew-tablet.jpg") no-repeat
+      center center fixed;
+  }
+}
