@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import { HomeView } from "./views/Home";
 import { Layout } from "./views/shared/Layout";
 import { DestinationView } from "./views/Destination";
@@ -10,7 +10,7 @@ import "./App.css";
 const App = () => {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomeView />} />
@@ -19,7 +19,7 @@ const App = () => {
             <Route path="/technology" element={<TechnologyView />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
