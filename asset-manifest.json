@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/space-tourism-website/static/css/main.80e1cc8a.css",
-    "main.js": "/space-tourism-website/static/js/main.9e45f08c.js",
-    "static/js/787.33fd8deb.chunk.js": "/space-tourism-website/static/js/787.33fd8deb.chunk.js",
-    "static/media/background-home-desktop.jpg": "/space-tourism-website/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
-    "static/media/background-destination-desktop.jpg": "/space-tourism-website/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
-    "static/media/background-home-tablet.jpg": "/space-tourism-website/static/media/background-home-tablet.bc9efcc3281fa6801077.jpg",
-    "static/media/background-crew-desktop.jpg": "/space-tourism-website/static/media/background-crew-desktop.88a3c692fd34eb311e04.jpg",
-    "static/media/background-destination-tablet.jpg": "/space-tourism-website/static/media/background-destination-tablet.8f55d346d8b6cfd95ab7.jpg",
-    "static/media/background-technology-desktop.jpg": "/space-tourism-website/static/media/background-technology-desktop.b7b589b3c0c5ef0811d4.jpg",
-    "static/media/background-crew-tablet.jpg": "/space-tourism-website/static/media/background-crew-tablet.16d51cf61e98ce45eb61.jpg",
-    "static/media/background-technology-tablet.jpg": "/space-tourism-website/static/media/background-technology-tablet.48c38b028217ee0096c4.jpg",
-    "index.html": "/space-tourism-website/index.html",
-    "static/media/logo.svg": "/space-tourism-website/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
-    "static/media/icon-close.svg": "/space-tourism-website/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
-    "static/media/icon-hamburger.svg": "/space-tourism-website/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
-    "main.80e1cc8a.css.map": "/space-tourism-website/static/css/main.80e1cc8a.css.map",
-    "main.9e45f08c.js.map": "/space-tourism-website/static/js/main.9e45f08c.js.map",
-    "787.33fd8deb.chunk.js.map": "/space-tourism-website/static/js/787.33fd8deb.chunk.js.map"
+    "main.css": "./static/css/main.a860ace6.css",
+    "main.js": "./static/js/main.3119d08f.js",
+    "static/js/787.33fd8deb.chunk.js": "./static/js/787.33fd8deb.chunk.js",
+    "static/media/background-home-desktop.jpg": "./static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
+    "static/media/background-destination-desktop.jpg": "./static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
+    "static/media/background-home-tablet.jpg": "./static/media/background-home-tablet.bc9efcc3281fa6801077.jpg",
+    "static/media/background-crew-desktop.jpg": "./static/media/background-crew-desktop.88a3c692fd34eb311e04.jpg",
+    "static/media/background-destination-tablet.jpg": "./static/media/background-destination-tablet.8f55d346d8b6cfd95ab7.jpg",
+    "static/media/background-technology-desktop.jpg": "./static/media/background-technology-desktop.b7b589b3c0c5ef0811d4.jpg",
+    "static/media/background-crew-tablet.jpg": "./static/media/background-crew-tablet.16d51cf61e98ce45eb61.jpg",
+    "static/media/background-technology-tablet.jpg": "./static/media/background-technology-tablet.48c38b028217ee0096c4.jpg",
+    "index.html": "./index.html",
+    "static/media/logo.svg": "./static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
+    "static/media/icon-close.svg": "./static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
+    "static/media/icon-hamburger.svg": "./static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
+    "main.a860ace6.css.map": "./static/css/main.a860ace6.css.map",
+    "main.3119d08f.js.map": "./static/js/main.3119d08f.js.map",
+    "787.33fd8deb.chunk.js.map": "./static/js/787.33fd8deb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80e1cc8a.css",
-    "static/js/main.9e45f08c.js"
+    "static/css/main.a860ace6.css",
+    "static/js/main.3119d08f.js"
   ]
 }
