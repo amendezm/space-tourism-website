@@ -108,3 +108,47 @@
     display: block;
   }
 }
+
+.mobile-menu {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(18px);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 65vw;
+}
+
+.mobile-menu > .close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+
+.mobile-menu > .links-list {
+  height: 100%;
+  margin: 0;
+  padding: 8rem 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu > .links-list > .links-item {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 0.25rem 0;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  border-right: 3px solid #fff0;
+}
+
+.mobile-menu > .links-list > .links-item > .content > .text {
+  margin-left: 0.5rem;
+}
+
+.mobile-menu > .links-list > .links-item.active {
+  border-right: 3px solid #fff;
+  box-sizing: border-box;
+}
