@@ -30,15 +30,15 @@ const Navbar = () => {
         <img className="logo" src={logo} alt="logo" />
       </div>
       {(!isMenuOpen || !isMobile) && (
-        <>
-          <div className="navbar-links">
-            <ul className="links-list">{renderLinks()}</ul>
-            <div className="line-through"></div>
-          </div>
-          <span role="button" className="hamburger" onClick={handleOpen}>
-            <img src={iconHamburger} alt="menu-trigger" />
-          </span>
-        </>
+        <div className="navbar-links">
+          <ul className="links-list">{renderLinks()}</ul>
+          <div className="line-through"></div>
+        </div>
+      )}
+      {!isMenuOpen && isMobile && (
+        <span role="button" className="hamburger" onClick={handleOpen}>
+          <img src={iconHamburger} alt="menu-trigger" />
+        </span>
       )}
       {isMobile && isMenuOpen && (
         <div className="mobile-menu">

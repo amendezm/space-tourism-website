@@ -6,11 +6,212 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  display: flex;
+  align-items: flex-end;
 }
 
 @media screen and (max-width: 768px) {
   .home {
     background: url("./../assets/home/background-home-tablet.jpg") no-repeat
       center center fixed;
+  }
+}
+
+.home > .content {
+  height: 75%;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+}
+
+@media screen and (max-width: 600px) {
+  .home > .content {
+    height: 85%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .home > .content {
+    height: 83%;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .home > .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home > .content > .left {
+  padding: 1rem 9vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .home > .content > .left {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .home > .content > .left {
+    padding: 1rem 5vw;
+  }
+}
+
+.home > .content > .left > p:nth-child(1) {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #d0d6f9;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .home > .content > .left > p:nth-child(1) {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .home > .content > .left > p:nth-child(1) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .home > .content > .left > p:nth-child(1) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.home > .content > .left > p:nth-child(2) {
+  font-family: "Bellefair", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 150px;
+  line-height: 172px;
+  margin: 1rem 0 1.5rem 0;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .home > .content > .left > p:nth-child(2) {
+    font-size: 80px;
+    line-height: 100px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .home > .content > .left > p:nth-child(2) {
+    font-size: 150px;
+    line-height: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .home > .content > .left > p:nth-child(2) {
+    font-size: 115px;
+    line-height: 120px;
+  }
+}
+
+.home > .content > .left > p:nth-child(3) {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+}
+
+@media screen and (max-width: 600px) {
+  .home > .content > .left > p:nth-child(3) {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .home > .content > .left > p:nth-child(3) {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 20vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .home > .content > .left > p:nth-child(1) {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+.home > .content > .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home > .content > .right > .explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 274px;
+  width: 274px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-top: 6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .home > .content > .right > .explore {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home > .content > .right > .explore {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .home > .content > .right > .explore {
+    height: 242px;
+    width: 242px;
+  }
+}
+
+.home > .content > .right > .explore > .text {
+  font-family: "Bellefair", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 2px;
+  color: #0b0d17;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .home > .content > .right > .explore > .text {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1.25px;
   }
 }
