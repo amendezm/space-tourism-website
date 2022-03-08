@@ -30,29 +30,35 @@ const Navbar = () => {
         <img className="logo" src={logo} alt="logo" />
       </div>
       {(!isMenuOpen || !isMobile) && (
-        <div className="navbar-links">
-          <ul className="links-list">{renderLinks()}</ul>
+        <>
           <div className="line-through"></div>
-        </div>
+          <div className="navbar-links">
+            <ul className="links-list">{renderLinks()}</ul>
+          </div>
+        </>
       )}
-      {!isMenuOpen && isMobile && (
-        <span role="button" className="hamburger" onClick={handleOpen}>
-          <img src={iconHamburger} alt="menu-trigger" />
+      {isMobile && (
+        <span
+          role="button"
+          className="hamburger"
+          onClick={isMenuOpen ? handleClose : handleOpen}
+        >
+          <img
+            src={isMenuOpen ? iconClose : iconHamburger}
+            alt="menu-trigger"
+          />
         </span>
       )}
-      {isMobile && isMenuOpen && (
-        <div className="mobile-menu">
-          <span role="button" className="close" onClick={handleClose}>
-            <img src={iconClose} alt="menu-trigger" />
-          </span>
-          <ul className="links-list">{renderLinks()}</ul>
+      {isMobile && (
+        <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
+          <ul className="links-list">{renderLinks(handleClose)}</ul>
         </div>
       )}
     </div>
   );
 };
 
-const renderLinks = () => {
+const renderLinks = (handleClose) => {
   const links = [
     { number: "00", text: "home", route: "/" },
     { number: "01", text: "destination", route: "/destination" },
@@ -63,7 +69,12 @@ const renderLinks = () => {
   return (
     <>
       {links.map(({ number, text, route }, key) => (
-        <NavLink key={key} className="links-item" to={route}>
+        <NavLink
+          key={key}
+          className="links-item"
+          to={route}
+          onClick={handleClose}
+        >
           <div className="content">
             <strong className="number">{number}</strong>
             <span className="text">{text}</span>

@@ -27,7 +27,7 @@
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(18px);
   width: 60%;
-  min-width: 425px;
+  min-width: 600px;
   height: 100%;
 }
 
@@ -37,21 +37,28 @@
   }
 }
 
-.navbar-links > .line-through {
-  position: absolute;
+.line-through {
   top: 50%;
   transform: translateY(-50%);
-  right: 97%;
-  width: 50%;
+  width: 37%;
   height: 2px;
   background-color: #979797;
   mix-blend-mode: normal;
   opacity: 0.25;
+  margin-right: -3rem;
+  margin-left: 4rem;
+  z-index: 2;
 }
 
 @media screen and (max-width: 768px) {
-  .navbar-links > .line-through {
+  .line-through {
     display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .line-through {
+    margin-right: -1rem;
+    margin-left: 2rem;
   }
 }
 
@@ -64,7 +71,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar-links > .links-list {
+    gap: 1rem;
+  }
 }
 
 .navbar-links > .links-list > .links-item {
@@ -116,6 +129,7 @@
   display: none;
   margin-right: 1.5rem;
   cursor: pointer;
+  z-index: 2;
 }
 
 @media screen and (max-width: 600px) {
@@ -131,14 +145,12 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 65vw;
+  width: 0;
+  transition: width 0.5s ease-in-out;
 }
 
-.mobile-menu > .close {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  cursor: pointer;
+.mobile-menu.open {
+  width: 65vw;
 }
 
 .mobile-menu > .links-list {
