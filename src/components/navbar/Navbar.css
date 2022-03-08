@@ -76,6 +76,12 @@
   height: 100%;
   margin-left: 0.25rem;
   border-bottom: 3px solid #fff0;
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
 }
 
 .navbar-links > .links-list > .links-item.active {
@@ -83,8 +89,17 @@
   box-sizing: border-box;
 }
 
+.navbar-links > .links-list > .links-item:hover {
+  border-bottom: 3px solid #fff8;
+  box-sizing: border-box;
+}
+
 .navbar-links > .links-list > .links-item > .content > .text {
   margin-left: 0.5rem;
+}
+
+.navbar-links > .links-list > .links-item > .content > .number {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
