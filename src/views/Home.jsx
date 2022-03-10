@@ -15,6 +15,7 @@ const HomeView = () => (
       </div>
       <div className="right">
         <div className="explore">
+          <div className="outside-circle"></div>
           <div className="text">Explore</div>
         </div>
       </div>
