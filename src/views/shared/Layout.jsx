@@ -1,15 +1,28 @@
-import { Outlet } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 import { Navbar } from "../../components/navbar/Navbar";
 
 import "./Layout.css";
 
-const Layout = () => (
-  <div className="layout">
-    <Navbar />
-    <div className="main">
-      <Outlet />
+const Layout = () => {
+  const { pathname } = useLocation();
+  const [backgroundClass, setBackgroundClass] = useState("");
+
+  useEffect(() => {
+    setBackgroundClass(() => {
+      const withoutSlash = pathname.substring(1) || "home";
+      return `${withoutSlash}-background`;
+    });
+  }, [pathname]);
+
+  return (
+    <div className={`layout ${backgroundClass}`}>
+      <Navbar />
+      <div className="main">
+        <Outlet />
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export { Layout };

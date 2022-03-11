@@ -45,6 +45,7 @@ const DestinationView = () => {
           <div className="destinations-bar">
             {destinations.map(({ name }) => (
               <span
+                key={name}
                 role="button"
                 className={`destination-name ${
                   name === destinationName ? "active" : ""
