@@ -1,0 +1,54 @@
+.destination-details > .content {
+  margin-top: 3rem;
+  color: #fff;
+}
+
+.destination-details > .content > .name {
+  font-family: "Bellefair", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 115px;
+  text-transform: uppercase;
+}
+
+.destination-details > .content > .description {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+  margin-top: 1rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #383b4b;
+}
+
+.destination-details > .content > .bottom {
+  display: flex;
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  color: #d0d6f9;
+}
+
+.destination-details > .content > .bottom > .distance {
+  margin-right: 4rem;
+}
+
+.destination-details > .content > .bottom .label {
+  text-transform: uppercase;
+}
+
+.destination-details > .content > .bottom .value {
+  font-family: "Bellefair", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
