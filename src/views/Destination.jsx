@@ -33,31 +33,29 @@ const DestinationView = () => {
 
   return (
     <div className="destination-page">
-      <div className="container">
-        <div className="title">
-          <strong className="number">01</strong>
-          <span className="text">Pick your destination</span>
+      <div className="title">
+        <strong className="number">01</strong>
+        <span className="text">Pick your destination</span>
+      </div>
+      <div className="destination-photo">
+        <img src={imgUrl} alt="destinationImg" />
+      </div>
+      <div className="destination-details">
+        <div className="destinations-bar">
+          {destinations.map(({ name }) => (
+            <span
+              key={name}
+              role="button"
+              className={`destination-name ${
+                name === destinationName ? "active" : ""
+              }`}
+              onClick={handleDestinationChange(name)}
+            >
+              {name}
+            </span>
+          ))}
         </div>
-        <div className="destination-photo">
-          <img src={imgUrl} alt="destinationImg" />
-        </div>
-        <div className="destination-details">
-          <div className="destinations-bar">
-            {destinations.map(({ name }) => (
-              <span
-                key={name}
-                role="button"
-                className={`destination-name ${
-                  name === destinationName ? "active" : ""
-                }`}
-                onClick={handleDestinationChange(name)}
-              >
-                {name}
-              </span>
-            ))}
-          </div>
-          <DestinationDetails destination={destination} />
-        </div>
+        <DestinationDetails destination={destination} />
       </div>
     </div>
   );
