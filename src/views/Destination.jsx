@@ -6,6 +6,7 @@ import marsImg from "./../assets/destination/image-mars.png";
 import europaImg from "./../assets/destination/image-europa.png";
 import titanImg from "./../assets/destination/image-titan.png";
 import { DestinationDetails } from "../components/destination/DestinationDetails";
+import { PageTitle } from "../components/page-title/PageTitle";
 
 const { destinations } = data;
 const photos = {
@@ -33,10 +34,7 @@ const DestinationView = () => {
 
   return (
     <div className="destination-page">
-      <div className="title">
-        <strong className="number">01</strong>
-        <span className="text">Pick your destination</span>
-      </div>
+      <PageTitle number="01" title="Pick your destination" />
       <div className="destination-photo">
         <img src={imgUrl} alt="destinationImg" />
       </div>

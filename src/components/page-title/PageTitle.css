@@ -1,0 +1,47 @@
+.title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #ffffff;
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    grid-column: span 1;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .title {
+    font-size: 20px;
+    line-height: 24px;
+    grid-column: span 1;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.title > .number {
+  font-weight: bold;
+  opacity: 0.25;
+}
+
+.title > .text {
+  margin-left: 1rem;
+}
