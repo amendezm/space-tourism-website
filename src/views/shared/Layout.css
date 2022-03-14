@@ -10,6 +10,7 @@
 
 @media screen and (max-width: 600px) {
   .layout {
+    min-height: 100%;
     height: auto;
   }
 }
@@ -69,9 +70,7 @@
 
 @media screen and (max-width: 600px) {
   .main {
-    height: auto;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
+    height: 100%;
   }
 }
 
