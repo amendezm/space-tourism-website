@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+  .destinations-bar {
+    text-align: center;
+  }
+}
+
+.destinations-bar > .destination-name {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .destinations-bar > .destination-name {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+  }
+}
+
+.destinations-bar > .destination-name:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.destinations-bar > .destination-name.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.destinations-bar > .destination-name:hover {
+  border-bottom: 2px solid #fff8;
+}

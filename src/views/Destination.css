@@ -1,118 +1,45 @@
-.destination-page {
-  height: 100%;
-  width: 80vw;
-  max-width: 1350px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto 1fr;
-  column-gap: 10vw;
-}
-
-@media screen and (max-width: 768px) {
-  .destination-page {
-    margin: 0 2rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr;
-    width: auto;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .destination-page {
-    column-gap: 4vw;
-  }
-}
-
-.destination-page > .title {
-  font-family: "Barlow Condensed", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 34px;
-  letter-spacing: 4.725px;
-  text-transform: uppercase;
-  color: #ffffff;
-  grid-column: span 2;
-}
-
-@media screen and (max-width: 600px) {
-  .destination-page > .title {
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 2.7px;
-    grid-column: span 1;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 768px) {
-  .destination-page > .title {
-    font-size: 20px;
-    line-height: 24px;
-    grid-column: span 1;
-    margin-bottom: 3rem;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .destination-page > .title {
-    font-size: 20px;
-    line-height: 26px;
-  }
-}
-
-.destination-page > .title > .number {
-  font-weight: bold;
-  opacity: 0.25;
-}
-
-.destination-page > .title > .text {
-  margin-left: 1rem;
-}
-
-.destination-page > .destination-photo {
+.destination-photo {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 @media screen and (max-width: 600px) {
-  .destination-page > .destination-photo > img {
+  .destination-photo > img {
     width: 170px;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
-  .destination-page > .destination-photo > img {
+  .destination-photo > img {
     width: 300px;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
-  .destination-page > .destination-photo {
+  .destination-photo {
     justify-content: flex-start;
   }
 
-  .destination-page > .destination-photo > img {
+  .destination-photo > img {
     width: 350px;
   }
 }
 
-.destination-page > .destination-details {
+.destination-details {
   margin-top: 6rem;
 }
 
 @media screen and (max-width: 600px) {
-  .destination-page > .destination-details {
+  .destination-details {
     margin-top: 1.5rem;
     justify-content: flex-start;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
-  .destination-page > .destination-details {
+  .destination-details {
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -122,63 +49,7 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
-  .destination-page > .destination-details {
+  .destination-details {
     margin-top: 8rem;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .destination-page > .destination-details > .destinations-bar {
-    text-align: center;
-  }
-}
-
-.destination-page
-  > .destination-details
-  > .destinations-bar
-  > .destination-name {
-  font-family: "Barlow Condensed", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.7px;
-  color: #d0d6f9;
-  text-transform: uppercase;
-  border-bottom: 2px solid transparent;
-  padding: 0.5rem 0;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 600px) {
-  .destination-page
-    > .destination-details
-    > .destinations-bar
-    > .destination-name {
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 2.3625px;
-  }
-}
-
-.destination-page
-  > .destination-details
-  > .destinations-bar
-  > .destination-name:not(:last-child) {
-  margin-right: 2rem;
-}
-
-.destination-page
-  > .destination-details
-  > .destinations-bar
-  > .destination-name.active {
-  color: #fff;
-  border-bottom: 2px solid #fff;
-}
-
-.destination-page
-  > .destination-details
-  > .destinations-bar
-  > .destination-name:hover {
-  border-bottom: 2px solid #fff8;
 }

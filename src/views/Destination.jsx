@@ -7,6 +7,8 @@ import europaImg from "./../assets/destination/image-europa.png";
 import titanImg from "./../assets/destination/image-titan.png";
 import { DestinationDetails } from "../components/destination/DestinationDetails";
 import { PageTitle } from "../components/page-title/PageTitle";
+import { MainContentLayout } from "./shared/MainContentLayout";
+import { DestinationsBar } from "../components/destination/DestinationsBar";
 
 const { destinations } = data;
 const photos = {
@@ -33,29 +35,20 @@ const DestinationView = () => {
   }, [destinationName]);
 
   return (
-    <div className="destination-page">
+    <MainContentLayout>
       <PageTitle number="01" title="Pick your destination" />
       <div className="destination-photo">
         <img src={imgUrl} alt="destinationImg" />
       </div>
       <div className="destination-details">
-        <div className="destinations-bar">
-          {destinations.map(({ name }) => (
-            <span
-              key={name}
-              role="button"
-              className={`destination-name ${
-                name === destinationName ? "active" : ""
-              }`}
-              onClick={handleDestinationChange(name)}
-            >
-              {name}
-            </span>
-          ))}
-        </div>
+        <DestinationsBar
+          destinations={destinations.map(({ name }) => name)}
+          activeDestination={destinationName}
+          handleChange={handleDestinationChange}
+        />
         <DestinationDetails destination={destination} />
       </div>
-    </div>
+    </MainContentLayout>
   );
 };
 
