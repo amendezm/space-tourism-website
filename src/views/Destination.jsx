@@ -35,20 +35,24 @@ const DestinationView = () => {
   }, [destinationName]);
 
   return (
-    <MainContentLayout>
-      <PageTitle number="01" title="Pick your destination" />
-      <div className="destination-photo">
-        <img src={imgUrl} alt="destinationImg" />
-      </div>
-      <div className="destination-details">
-        <DestinationsBar
-          destinations={destinations.map(({ name }) => name)}
-          activeDestination={destinationName}
-          handleChange={handleDestinationChange}
-        />
-        <DestinationDetails destination={destination} />
-      </div>
-    </MainContentLayout>
+    <MainContentLayout
+      title={<PageTitle number="01" title="Pick your destination" />}
+      left={
+        <div className="destination-photo">
+          <img src={imgUrl} alt="destinationImg" />
+        </div>
+      }
+      right={
+        <div className="destination-details">
+          <DestinationsBar
+            destinations={destinations.map(({ name }) => name)}
+            activeDestination={destinationName}
+            handleChange={handleDestinationChange}
+          />
+          <DestinationDetails destination={destination} />
+        </div>
+      }
+    />
   );
 };
 

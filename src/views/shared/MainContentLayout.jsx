@@ -1,10 +1,10 @@
 import "./MainContentLayout.css";
 
-const MainContentLayout = ({ children }) => (
+const MainContentLayout = ({ title, left, right }) => (
   <div className="main-content">
-    {children[0]}
-    <div className="left">{children[1]}</div>
-    <div className="right">{children[2]}</div>
+    {title ?? <></>}
+    <div className="left">{left}</div>
+    <div className="right">{right}</div>
   </div>
 );
 
