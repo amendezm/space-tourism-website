@@ -1,14 +1,16 @@
 import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-import "./Navbar.css";
+import { useWindowDimensions } from "../../hooks/window-dimensions";
+
 import logo from "./../../assets/shared/logo.svg";
 import iconHamburger from "./../../assets/shared/icon-hamburger.svg";
 import iconClose from "./../../assets/shared/icon-close.svg";
-import { useWindowWidth } from "../../hooks/window-width";
-import { useEffect, useState } from "react";
+
+import "./Navbar.css";
 
 const Navbar = () => {
-  const windowWidth = useWindowWidth();
+  const { width: windowWidth } = useWindowDimensions();
   const [isMobile, setIsMobile] = useState(windowWidth <= 600);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

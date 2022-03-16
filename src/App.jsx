@@ -6,27 +6,10 @@ import { CrewView } from "./views/Crew";
 import { TechnologyView } from "./views/Technology";
 
 import "./App.css";
-import { useEffect, useState } from "react";
+import { useWindowDimensions } from "./hooks/window-dimensions";
 
 const App = () => {
-  const [height, setHeight] = useState(window.innerHeight);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setHeight(window.innerHeight);
-    };
-
-    const resizeListener = window.addEventListener("resize", handleResize);
-    const domLoadedListener = window.addEventListener(
-      "DOMContentLoaded",
-      handleResize
-    );
-
-    return () => {
-      window.removeEventListener("resize", resizeListener);
-      window.removeEventListener("DOMContentLoaded", domLoadedListener);
-    };
-  }, []);
+  const { height } = useWindowDimensions();
 
   return (
     <div className="App" style={{ height }}>
