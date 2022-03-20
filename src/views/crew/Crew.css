@@ -1,0 +1,54 @@
+.crew-left {
+  position: relative;
+  height: 100%;
+  width: 130%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.crew-left > .role {
+  font-family: "Bellefair", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.crew-left > .name {
+  font-family: "Bellefair", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.crew-left > .bio {
+  width: 70%;
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+  margin-bottom: 2rem;
+}
+
+.crew-right {
+  height: 100%;
+  position: relative;
+}
+
+.crew-right > img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

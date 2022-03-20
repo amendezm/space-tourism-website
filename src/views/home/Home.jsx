@@ -1,5 +1,5 @@
 import "./Home.css";
-import { MainContentLayout } from "./shared/MainContentLayout";
+import { MainContentLayout } from "../shared/MainContentLayout";
 
 const HomeView = () => (
   <MainContentLayout

@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
+import { PageTitle } from "../../components/page-title/PageTitle";
+import { MainContentLayout } from "../shared/MainContentLayout";
+import { DestinationsBar, DestinationDetails } from "./components";
+
+import moonImg from "./../../assets/destination/image-moon.png";
+import marsImg from "./../../assets/destination/image-mars.png";
+import europaImg from "./../../assets/destination/image-europa.png";
+import titanImg from "./../../assets/destination/image-titan.png";
+
 import "./Destination.css";
-import data from "./../data.json";
-import moonImg from "./../assets/destination/image-moon.png";
-import marsImg from "./../assets/destination/image-mars.png";
-import europaImg from "./../assets/destination/image-europa.png";
-import titanImg from "./../assets/destination/image-titan.png";
-import { DestinationDetails } from "../components/destination/DestinationDetails";
-import { PageTitle } from "../components/page-title/PageTitle";
-import { MainContentLayout } from "./shared/MainContentLayout";
-import { DestinationsBar } from "../components/destination/DestinationsBar";
+
+import data from "./../../data.json";
 
 const { destinations } = data;
 const photos = {

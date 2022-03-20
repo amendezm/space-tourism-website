@@ -3,11 +3,14 @@
   width: 80vw;
   max-width: 1350px;
   margin: 0 auto;
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto 1fr;
   column-gap: 10vw;
+}
+
+.main-content.without-title {
+  grid-template-rows: 1fr;
 }
 
 @media screen and (max-width: 600px) {

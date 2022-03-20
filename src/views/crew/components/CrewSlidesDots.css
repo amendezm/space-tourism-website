@@ -1,0 +1,24 @@
+.dots {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 7rem;
+}
+
+.dots > .dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.17;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+.dots > .do:not(:last-child) {
+  margin-right: 1.25rem;
+}
+
+.dots > .dot.active {
+  opacity: 1;
+}

@@ -1,9 +1,9 @@
 import { Routes, Route, HashRouter } from "react-router-dom";
-import { HomeView } from "./views/Home";
+import { HomeView } from "./views/home/Home";
 import { Layout } from "./views/shared/Layout";
-import { DestinationView } from "./views/Destination";
-import { CrewView } from "./views/Crew";
-import { TechnologyView } from "./views/Technology";
+import { DestinationView } from "./views/destination/Destination";
+import { CrewView } from "./views/crew/Crew";
+import { TechnologyView } from "./views/technology/Technology";
 
 import "./App.css";
 import { useWindowDimensions } from "./hooks/window-dimensions";
