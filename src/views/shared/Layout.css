@@ -1,11 +1,19 @@
+:root {
+  --navbar-height: 13vh;
+  --navbar-height-tablet: 9vh;
+}
+
 .layout {
   height: 100%;
   -webkit-background-size: cover !important;
   -moz-background-size: cover !important;
   -o-background-size: cover !important;
   background-size: cover !important;
-  display: flex;
-  align-items: flex-end;
+  display: grid;
+  grid-template-rows: var(--navbar-height) minmax(
+      calc(100vh - var(--navbar-height)),
+      max-content
+    );
 }
 
 @media screen and (max-width: 600px) {
@@ -13,6 +21,15 @@
     min-height: 100%;
     height: auto;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .layout {
+    grid-template-rows: var(--navbar-height-tablet) minmax(
+        calc(100vh - var(--navbar-height-tablet)),
+        max-content
+      );
   }
 }
 
@@ -65,18 +82,6 @@
 }
 
 .main {
-  height: 75%;
+  height: 100%;
   width: 100%;
-}
-
-@media screen and (max-width: 600px) {
-  .main {
-    height: 100%;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 768px) {
-  .main {
-    height: 85%;
-  }
 }

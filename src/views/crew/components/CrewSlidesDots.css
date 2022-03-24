@@ -2,7 +2,7 @@
   display: flex;
   position: absolute;
   left: 0;
-  bottom: 7rem;
+  bottom: 6rem;
 }
 
 .dots > .dot {
@@ -17,6 +17,10 @@
 
 .dots > .do:not(:last-child) {
   margin-right: 1.25rem;
+}
+
+.dots > .dot:hover {
+  opacity: 0.5;
 }
 
 .dots > .dot.active {

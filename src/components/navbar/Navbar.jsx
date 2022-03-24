@@ -27,7 +27,7 @@ const Navbar = () => {
   }, [windowWidth]);
 
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <div className="navbar-brand">
         <img className="logo" src={logo} alt="logo" />
       </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
           <ul className="links-list">{renderLinks(handleClose)}</ul>
         </div>
       )}
-    </div>
+    </nav>
   );
 };
 

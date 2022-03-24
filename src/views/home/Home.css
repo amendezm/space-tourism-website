@@ -7,6 +7,7 @@
 
 @media screen and (max-width: 768px) {
   .home-left {
+    justify-content: flex-end;
     text-align: center;
     padding: 0;
   }
@@ -27,6 +28,7 @@
   letter-spacing: 4.725px;
   color: #d0d6f9;
   text-transform: uppercase;
+  margin-top: 15vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -37,10 +39,11 @@
   }
 }
 
-@media screen and (min-width: 601px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .home-left > p:nth-child(1) {
     font-size: 20px;
     line-height: 24px;
+    margin-top: 0;
   }
 }
 
@@ -130,7 +133,7 @@
   width: 274px;
   background-color: #fff;
   border-radius: 50%;
-  margin-top: 6rem;
+  margin-top: 20vh;
   position: relative;
   cursor: pointer;
 }
@@ -140,6 +143,12 @@
     height: 150px;
     width: 150px;
     margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-right > .explore {
+    margin-top: 0;
   }
 }
 

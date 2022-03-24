@@ -1,6 +1,7 @@
 .App {
   /* height: 100vh; */
   font-family: "Bellefair", serif;
+  min-height: 900px;
 }
 
 @media screen and (max-width: 600px) {

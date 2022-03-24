@@ -8,6 +8,7 @@
   text-transform: uppercase;
   color: #ffffff;
   grid-column: span 2;
+  align-self: end;
 }
 
 @media screen and (max-width: 600px) {
@@ -16,7 +17,6 @@
     line-height: 19px;
     letter-spacing: 2.7px;
     grid-column: span 1;
-    margin-bottom: 2rem;
     text-align: center;
   }
 }
@@ -26,7 +26,12 @@
     font-size: 20px;
     line-height: 24px;
     grid-column: span 1;
-    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    align-self: center;
   }
 }
 
